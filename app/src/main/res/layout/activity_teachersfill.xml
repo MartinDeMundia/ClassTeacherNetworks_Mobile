@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:text="COMPLETE PROFILE"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            android:textColor="#fff"
+            android:gravity="center_horizontal" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/ic_login_bg"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorLineDivider"></RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linearRegister"
+        android:layout_width="365dp"
+        android:layout_height="562dp"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="@dimen/_16sdp"
+        android:layout_marginRight="@dimen/_16sdp"
+        android:background="@drawable/box_white_fill"
+        android:orientation="vertical"
+        android:padding="@dimen/_10sdp">
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/lineallay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/txtFeeTotal"
+                    android:fontFamily="@font/quicksand_medium"
+                    android:orientation="horizontal"
+                    android:text="Parents Students"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorCommonChristi"
+                    android:textSize="8sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+
+                    <TextView
+                        android:id="@+id/txtLabel1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/txtFeeTotal"
+                        android:fontFamily="@font/quicksand_medium"
+                        android:text="Teacher's Classes"
+                        android:textAllCaps="true"
+                        android:textColor="@color/colorCommonChristi"
+                        android:textSize="@dimen/_11sdp"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/txtFeeTotal"
+                        android:fontFamily="@font/quicksand_medium"
+                        android:text="add a class"
+                        android:layout_alignParentRight="true"
+                        android:textAllCaps="true"
+                        android:paddingRight="40sp"
+                        android:textColor="@color/colorCommonChristi"
+                        android:textSize="9sp"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/buttonAdd"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/add"
+                        android:drawableTop="@drawable/add"
+                        android:drawablePadding="-15sp"
+                        android:paddingTop="32sp"
+                        android:text="add student"
+                        android:textColor="#FFFFFF"></Button>
+                </RelativeLayout>
+
+                <android.support.constraint.ConstraintLayout
+                    android:id="@+id/recyclerconstraintlayout"
+                    android:layout_width="334dp"
+                    android:layout_height="129dp"
+                    tools:context=".ParentsFillActivity">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recycler"
+                        android:layout_width="332dp"
+                        android:layout_height="127dp"
+                        android:padding="0dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </android.support.constraint.ConstraintLayout>
+
+                <TextView
+                    android:id="@+id/txtLabel2"
+                    android:layout_width="331dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/txtFeeTotal"
+                    android:fontFamily="@font/quicksand_medium"
+                    android:text="Fill in Teachers Details"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorCommonChristi"
+                    android:textSize="@dimen/_11sdp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+
+                <RadioGroup
+                    android:id="@+id/radioSex"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation='horizontal'
+                    android:paddingTop="10dp">
+
+                    <TextView
+
+                        android:layout_width="150dp"
+                        style="@style/edt_Login_EditText"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/txtFeeTotal"
+                        android:fontFamily="@font/quicksand_medium"
+                        android:text="Choose account type"
+                        android:textAllCaps="false"
+                        android:textSize="11sp"
+                        android:textStyle="bold" />
+
+                    <RadioButton
+                        android:id="@+id/radioTeacher"
+                        style="@style/edt_Login_EditText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:fontFamily="@font/quicksand_medium"
+                        android:onClick="onRadioButtonClicked"
+                        android:text="Teacher"
+                        android:textSize="11sp" />
+
+                    <RadioButton
+                        android:id="@+id/radioPrincipal"
+                        style="@style/edt_Login_EditText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/quicksand_medium"
+                        android:onClick="onRadioButtonClicked"
+                        android:text="Principal"
+                        android:textSize="11sp" />
+
+                </RadioGroup>
+
+
+
+
+
+
+
+
+                <com.rengwuxian.materialedittext.MaterialAutoCompleteTextView
+                    android:id="@+id/edtSchool"
+                    style="@style/edt_Login_EditText"
+                    android:layout_width="match_parent"
+                    android:fontFamily="@font/quicksand_medium"
+                    android:hint="Name of School"
+                    android:inputType="text" />
+
+
+                <Spinner
+                    android:id="@+id/edtInitial"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/quicksand_medium"
+                    android:hint="Title"
+                    />
+
+               <!-- <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/edtInitial"
+                    style="@style/edt_Login_EditText"
+                    android:fontFamily="@font/quicksand_medium"
+                    android:hint="Title"
+                    android:inputType="text" />-->
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/edtFirstname"
+                    style="@style/edt_Login_EditText"
+                    android:fontFamily="@font/quicksand_medium"
+                    android:hint="First Name"
+                    android:inputType="text" />
+
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/edtMiddlename"
+                    style="@style/edt_Login_EditText"
+                    android:fontFamily="@font/quicksand_medium"
+                    android:hint="Second Name"
+                    android:inputType="text" />
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/edtLastname"
+                    style="@style/edt_Login_EditText"
+                    android:fontFamily="@font/quicksand_medium"
+                    android:hint="Last Name"
+                    android:inputType="text" />
+
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/edtTscNumber"
+                    style="@style/edt_Login_EditText"
+                    android:fontFamily="@font/quicksand_medium"
+                    android:hint="TSC Number"
+                    android:inputType="text" />
+
+                <!--<com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/edtGender"
+                    style="@style/edt_Login_EditText"
+                    android:fontFamily="@font/quicksand_medium"
+                    android:hint="Gender"
+                    android:inputType="text" />-->
+
+                <RadioGroup
+                    android:id="@+id/radioGender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation='horizontal'
+                    android:paddingTop="10dp">
+
+                    <TextView
+                        android:layout_width="150dp"
+                        style="@style/edt_Login_EditText"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/txtFeeTotal"
+                        android:fontFamily="@font/quicksand_medium"
+                        android:text="Choose gender"
+                        android:textAllCaps="false"
+                        android:textSize="11sp"
+                        android:textStyle="bold" />
+
+                    <RadioButton
+                        android:id="@+id/radioMale"
+                        style="@style/edt_Login_EditText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:fontFamily="@font/quicksand_medium"
+                        android:onClick="onRadioButtonClicked"
+                        android:text="Male"
+                        android:textSize="11sp" />
+
+                    <RadioButton
+                        android:id="@+id/radioFemale"
+                        style="@style/edt_Login_EditText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/quicksand_medium"
+                        android:onClick="onRadioButtonClicked"
+                        android:text="Female"
+                        android:textSize="11sp" />
+
+                </RadioGroup>
+
+
+
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/edtteachersEmail"
+                    style="@style/edt_Login_EditText"
+                    android:fontFamily="@font/quicksand_medium"
+                    android:hint="Enter Email address"
+                    android:inputType="text" />
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/edtPassword"
+                    style="@style/edt_Login_EditText"
+                    android:fontFamily="@font/quicksand_medium"
+                    android:hint="Set a Password"
+                    android:inputType="text" />
+
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/edtTeachersCode"
+                    style="@style/edt_Login_EditText"
+                    android:fontFamily="@font/quicksand_medium"
+                    android:hint="Teachers Code"
+                    android:inputType="text" />
+
+
+                <Button
+                    android:id="@+id/buttonOk"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:background="@color/colorPrimary"
+                    android:fontFamily="@font/quicksand_bold"
+                    android:text="Save"
+                    android:textColor="#fff" />
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+</RelativeLayout>

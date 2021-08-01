@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:id="@+id/relativeSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:padding="@dimen/_10sdp">
+
+        <TextView
+            android:id="@+id/txtStudentName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/txtClassName"
+            android:fontFamily="@font/quicksand_regular"
+            android:text="Assignment Name"
+            android:textColor="@color/colorAssignmentSubject"
+            android:textSize="@dimen/_7sdp" />
+
+        <TextView
+            android:id="@+id/txtClassName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:fontFamily="@font/quicksand_bold"
+            android:gravity="right"
+            android:text="Class1"
+            android:textColor="@color/colorAssignmentDate"
+            android:textSize="@dimen/_6sdp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+</RelativeLayout>

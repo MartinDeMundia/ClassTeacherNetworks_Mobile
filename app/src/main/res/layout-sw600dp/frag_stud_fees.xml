@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/scrollContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10sdp"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/quicksand_regular"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/txtAmountPaid"
+                        android:text="Amount Paid"
+                        android:textColor="@color/colorLightBlack_1"
+                        android:textSize="@dimen/_7sdp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txtAmountPaid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/quicksand_regular"
+                        android:layout_alignParentRight="true"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:text="2323322"
+                        android:textColor="@color/colorCommonChristiDark"
+                        android:textSize="@dimen/_6sdp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_3sdp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/quicksand_regular"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/txtBalance"
+                        android:text="Balance"
+                        android:textColor="@color/colorLightBlack_1"
+                        android:textSize="@dimen/_7sdp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txtBalance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:text="0.00"
+                        android:textColor="@color/colorCommonChristiDark"
+                        android:textSize="@dimen/_6sdp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/quicksand_regular"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/txtFeeStatus"
+                        android:text="FEE STATUS"
+                        android:textColor="@color/colorLightBlack_1"
+                        android:textSize="@dimen/_7sdp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txtFeeStatus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:gravity="center"
+                        android:fontFamily="@font/quicksand_bold"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:text="CLEARED"
+                        android:textAllCaps="true"
+                        android:textColor="@color/colorCommonChristiDark"
+                        android:textSize="@dimen/_6sdp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="@color/colorGray"></View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10sdp"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    style="@style/relative_CardLook"
+                    android:paddingBottom="@dimen/_3sdp"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:paddingRight="@dimen/_10sdp"
+                    android:paddingTop="@dimen/_3sdp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/layoutDummy1"
+                        android:padding="@dimen/_5sdp"
+                        android:text="Fee Structure"
+                        android:fontFamily="@font/quicksand_medium"
+                        android:textAllCaps="true"
+                        android:textColor="@color/colorCommonChristiDark"
+                        android:textSize="@dimen/_6sdp" />
+
+                    <include
+                        android:id="@+id/layoutDummy1"
+                        layout="@layout/layout_share_email_download"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"></include>
+                </RelativeLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerFeeStructure"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:nestedScrollingEnabled="false"></android.support.v7.widget.RecyclerView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+    <include
+        android:id="@+id/ProgressInner"
+        layout="@layout/loading_progress"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:focusableInTouchMode="true"
+    tools:context="com.shamlatech.activity.teacher.UpdateScoreActivity">
+
+    <include
+        android:id="@+id/includeAppBar"
+        layout="@layout/layout_app_bar_2" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/includeBottomBar"
+        android:layout_below="@+id/includeAppBar"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/_10sdp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/card_look_1"
+            android:paddingBottom="@dimen/_7sdp"
+            android:paddingLeft="@dimen/_15sdp"
+            android:paddingRight="@dimen/_15sdp"
+            android:paddingTop="@dimen/_7sdp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_toLeftOf="@id/spinnerSubject"
+                android:fontFamily="@font/quicksand_regular"
+                android:text="Exam Period"
+                android:textSize="@dimen/_7sdp" />
+
+            <Spinner
+                android:id="@+id/spinnerSubject"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@color/colorTrans"></Spinner>
+
+        </RelativeLayout>
+
+        <View style="@style/viewDivider" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/_10sdp">
+
+                <LinearLayout
+                    android:id="@+id/linearSingleMark"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_5sdp">
+
+                    <TextView
+                        android:id="@+id/txtSingleMarkName"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/quicksand_regular"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:textSize="@dimen/_7sdp"
+                        android:text="Subject Score" />
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_weight="1"
+                            android:background="@drawable/card_look"
+                            android:orientation="horizontal"
+                            android:padding="@dimen/_5sdp">
+
+                            <EditText
+                                android:id="@+id/edtScore"
+                                android:layout_width="@dimen/_50sdp"
+                                android:layout_height="wrap_content"
+                                android:background="@null"
+                                android:fontFamily="@font/quicksand_bold"
+                                android:gravity="right"
+                                android:hint="score"
+                                android:inputType="numberDecimal"
+                                android:maxLength="4"
+                                android:padding="@dimen/_5sdp"
+                                android:textSize="@dimen/_6sdp" />
+
+                        </LinearLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearPart1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_5sdp">
+
+                    <TextView
+                        android:id="@+id/txtPart1MarkName"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/quicksand_regular"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:textSize="@dimen/_7sdp"
+                        android:text="Subject Score" />
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_weight="1"
+                            android:background="@drawable/card_look"
+                            android:orientation="horizontal"
+                            android:padding="@dimen/_5sdp">
+
+                            <EditText
+                                android:id="@+id/edtPart1"
+                                android:layout_width="@dimen/_50sdp"
+                                android:layout_height="wrap_content"
+                                android:background="@null"
+                                android:fontFamily="@font/quicksand_bold"
+                                android:gravity="right"
+                                android:hint="score"
+                                android:inputType="numberDecimal"
+                                android:maxLength="4"
+                                android:padding="@dimen/_5sdp"
+                                android:textSize="@dimen/_6sdp" />
+
+                        </LinearLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearPart2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_5sdp">
+
+                    <TextView
+                        android:id="@+id/txtPart2MarkName"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/quicksand_regular"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:textSize="@dimen/_7sdp"
+                        android:text="Subject Score" />
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_weight="1"
+                            android:background="@drawable/card_look"
+                            android:orientation="horizontal"
+                            android:padding="@dimen/_5sdp">
+
+                            <EditText
+                                android:id="@+id/edtPart2"
+                                android:layout_width="@dimen/_50sdp"
+                                android:layout_height="wrap_content"
+                                android:background="@null"
+                                android:fontFamily="@font/quicksand_bold"
+                                android:gravity="right"
+                                android:hint="score"
+                                android:inputType="numberDecimal"
+                                android:maxLength="4"
+                                android:padding="@dimen/_5sdp"
+                                android:textSize="@dimen/_6sdp" />
+
+                        </LinearLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearPart3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_5sdp">
+
+                    <TextView
+                        android:id="@+id/txtPart3MarkName"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/quicksand_regular"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:textSize="@dimen/_7sdp"
+                        android:text="Subject Score" />
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_weight="1"
+                            android:background="@drawable/card_look"
+                            android:orientation="horizontal"
+                            android:padding="@dimen/_5sdp">
+
+                            <EditText
+                                android:id="@+id/edtPart3"
+                                android:layout_width="@dimen/_50sdp"
+                                android:layout_height="wrap_content"
+                                android:background="@null"
+                                android:fontFamily="@font/quicksand_bold"
+                                android:gravity="right"
+                                android:hint="score"
+                                android:inputType="numberDecimal"
+                                android:maxLength="4"
+                                android:padding="@dimen/_5sdp"
+                                android:textSize="@dimen/_6sdp" />
+
+                        </LinearLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_5sdp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/quicksand_regular"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:textSize="@dimen/_7sdp"
+                        android:text="Additional Comments" />
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_weight="1"
+                        android:background="@drawable/card_look"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/_5sdp">
+
+                        <EditText
+                            android:id="@+id/edtComments"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@null"
+                            android:fontFamily="@font/quicksand_regular"
+                            android:gravity="right"
+                            android:hint="type here"
+                            android:padding="@dimen/_5sdp"
+                            android:textSize="@dimen/_6sdp" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativeDone"
+                android:layout_width="@dimen/_200sdp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="@dimen/_10sdp"
+                android:background="@drawable/button_green">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@font/quicksand_bold"
+                    android:padding="@dimen/_5sdp"
+                    android:text="Done"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/_8sdp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <include
+        android:id="@+id/includeBottomBar"
+        layout="@layout/layout_bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+
+
+    <include
+        android:id="@+id/Custom_Progress"
+        layout="@layout/loading_progress"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+</RelativeLayout>

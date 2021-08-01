@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+
+            android:text="COMPLETE PROFILE"
+            android:textColor="#fff"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/ic_login_bg"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorLoginBG"></RelativeLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linearRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="@dimen/_16sdp"
+        android:layout_marginRight="@dimen/_16sdp"
+        android:background="@drawable/box_white_fill"
+        android:orientation="vertical"
+        android:padding="@dimen/_10sdp">
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/edtFirstname"
+            style="@style/edt_Login_EditText"
+            android:fontFamily="@font/quicksand_medium"
+            android:hint="First Name"
+            android:inputType="text"
+             />
+
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/edtLastname"
+            style="@style/edt_Login_EditText"
+            android:fontFamily="@font/quicksand_medium"
+            android:hint="Last Name"
+            android:inputType="text"
+            />
+
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/edtPhone1"
+            style="@style/edt_Login_EditText"
+            android:fontFamily="@font/quicksand_medium"
+            android:hint="Enter alternative phone number"
+            android:inputType="text"
+            />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/edtEmailaddress"
+            style="@style/edt_Login_EditText"
+            android:fontFamily="@font/quicksand_medium"
+            android:hint="Enter address"
+            android:inputType="text"
+            />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/edtprofession"
+            style="@style/edt_Login_EditText"
+            android:fontFamily="@font/quicksand_medium"
+            android:hint="Enter profession"
+            android:inputType="text"
+           />
+
+
+        <Button
+            android:id="@+id/buttonOk"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:background="@color/colorPrimary"
+            android:fontFamily="@font/quicksand_bold"
+            android:text="Save"
+            android:textColor="#fff" />
+
+    </LinearLayout>
+
+</RelativeLayout>

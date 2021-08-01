@@ -1,0 +1,223 @@
+Base URL : http://apps.classteacher.school/index.php/API/
+Method : POST
+
+userToken
+	Input : user_id, role_id, token
+
+
+getAccessLookups
+	Input: user_id, role_id
+
+
+getUserInfo
+	Input : user_id, role_id
+
+
+getCheckActivation
+	Input : phone_number, role_id
+
+
+getActivateUser
+	Input : phone_number, password, role_id
+
+
+getLogin
+	Input : name, password, source, role_id
+
+
+getAccessTeachersDetails
+	Input : user_id, role_id
+
+
+getAccessTeachersGroup
+	Input : user_id, role_id
+
+
+getAccessStudentInfo
+	Input : student_id
+
+
+getAccessAnnouncement
+	Input : user_id, role_id, status, last_id, date_from, date_to
+
+
+getAccessSingleAnnouncement
+	Input : user_id, role_id, announcement_id
+
+
+getAccessStudentTeacher
+	Input : user_id, role_id, student_id, year
+
+
+getAccessStudentEducation
+	Input : user_id, role_id, student_id, year
+
+
+getAccessStudentBehaviour
+	Input : user_id, role_id, student_id, year
+
+
+getAccessStudentHealth
+	Input : user_id, role_id, student_id, year
+
+
+getAccessStudentAttendance
+	Input : user_id, role_id, student_id, year
+
+
+getAccessStudentFees
+	Input : user_id, role_id, student_id
+
+
+getAccessStudentAssignmentList
+	Input : user_id, role_id, student_id
+
+
+getUpdateStudentMark
+	Input : user_id, role_id, student_id, exam_id, subject_id, marks, part1, part2, part3, comments
+
+
+getAddUpdateAssignmen
+	Input : user_id, role_id, student_id, subject_id, assignment_id, assignment_name, assignment_details, given_date, due_date
+
+
+getSubmitAssignment
+	Input : user_id, role_id, student_id, assignment_id, date, status
+
+
+getUpdateBehaviour
+	Input : user_id, role_id, student_id, behaviour
+
+
+
+getUpdateAttendance
+	Input : user_id, role_id, student_id, date, period, subject_id, attendance, reason
+
+
+getUpdateLastHealthOccurrence
+	Input : user_id, role_id, student_id, date, occurrence, action, further_action
+
+
+getAccessSchoolEvents
+	Input : user_id, role_id
+
+
+getAccessDocuments
+	Input : user_id, role_id, last_id
+
+
+getAccessPhotos
+	Input : user_id, role_id, last_id
+
+
+getAccessVideos
+	Input : user_id, role_id, last_id
+
+
+getRemoveDocument
+	Input : user_id, role_id, id
+
+
+getForumsList
+	Input : user_id, role_id, type, student_id, status, last_id
+
+
+getCreateForumsList
+	Input : user_id, role_id, topic, from, to, type, class_id, section_id, student_id
+
+
+getAccessSingleForum
+	Input : user_id, role_id, forum_id
+
+
+getUpdateFavForum
+	Input : user_id, role_id, forum_id, fav
+
+
+getUpdateOpenForum
+	Input : user_id, role_id, forum_id, open
+
+
+getReplyForum
+	Input : user_id, role_id, forum_id, comment
+
+
+getUpdateNotifications
+	Input : user_id, role_id, sound, vibrate, dnd
+
+
+getSendFeedback
+	Input : user_id, role_id, feedback
+
+
+getAccessNotification
+	Input : user_id, role_id, last_id
+
+
+getRemoveNotification
+	Input : user_id, role_id, id
+
+
+getReadNotification
+	Input : user_id, role_id, id
+
+
+getAccessParentDetails
+	Input : user_id, role_id
+
+
+getAccessAllergyList
+	Input : user_id, role_id, student_id
+
+
+getAddAllergyList
+	Input : user_id, role_id, student_id, name, details
+
+
+getRemoveAllergyList
+	Input : user_id, role_id, student_id, id
+
+
+getRemoveGroup
+	Input : user_id, role_id, group_id
+
+
+getCreateGroup
+	Input : user_id, role_id, classId, sectionId, subjectId, group_name, students
+
+
+getAccessMessageList
+	Input : user_id, role_id
+
+
+getSendMessage
+	Input : user_id, role_id, to, sender, receiver, message
+
+
+getUpdateClassLayout
+	Input : user_id, role_id, class_id, section_id, place
+
+
+getParentLogin
+	Input : name, password, source, role_id
+
+
+getTeacherLogin
+name, password, source, role_id
+
+
+getUpdatePassword
+	Input : user_id, role_id, old_pass, new_pass
+
+
+getUpdateProfile
+	Input : user_id, role_id, name, phone, email, image
+
+
+getForgetPassword
+	Input : name, source, role_id
+
+
+getResetPassword
+	Input : user_id, role_id, password
+

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAppBackgroundBlue">
+
+    <RelativeLayout
+        android:id="@+id/relativeMyClassLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="@dimen/_10sdp">
+
+                <RelativeLayout
+                    style="@style/relative_CardLook"
+                    android:paddingBottom="@dimen/_5sdp"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:paddingRight="@dimen/_10sdp"
+                    android:paddingTop="@dimen/_5sdp">
+
+                    <TextView
+                        android:id="@+id/txtClassName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/txtTotalStudent"
+                        android:fontFamily="@font/quicksand_regular"
+                        android:padding="@dimen/_5sdp"
+                        android:text=""
+                        android:textAllCaps="true"
+                        android:textSize="@dimen/_7sdp" />
+
+                    <TextView
+                        android:id="@+id/txtTotalStudent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:fontFamily="@font/quicksand_bold"
+                        android:padding="@dimen/_5sdp"
+                        android:text=""
+                        android:textAllCaps="true"
+                        android:textSize="@dimen/_6sdp"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:fontFamily="@font/quicksand_medium"
+                    android:padding="@dimen/_5sdp"
+                    android:text="STUDENT"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/_7sdp" />
+
+                <RelativeLayout style="@style/relative_CardLook">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recyclerStudent"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:nestedScrollingEnabled="false"
+                        android:padding="5dp" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    style="@style/relative_CardLook"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:fontFamily="@font/quicksand_medium"
+                            android:padding="@dimen/_5sdp"
+                            android:text="CLASS LAYOUT" />
+
+                        <ImageView
+                            android:id="@+id/imgMore"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:src="@drawable/ic_more" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="@dimen/_100sdp"
+                        android:layout_height="5dp"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@color/colorDarkGray"></View>
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recyclerClassLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:nestedScrollingEnabled="false"
+                        android:paddingBottom="@dimen/_20sdp"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:paddingRight="@dimen/_10sdp"
+                        android:paddingTop="@dimen/_10sdp" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_marginTop="@dimen/_10sdp"
+                    style="@style/relative_CardLook"
+                    android:paddingBottom="@dimen/_3sdp"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:paddingRight="@dimen/_10sdp"
+                    android:paddingTop="@dimen/_3sdp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:fontFamily="@font/quicksand_bold"
+                        android:padding="@dimen/_5sdp"
+                        android:text="CLASS LAYOUT"
+                        android:textAllCaps="true"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/_6sdp" />
+
+                    <include
+                        layout="@layout/layout_share_email_download"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"></include>
+                </RelativeLayout>
+            </LinearLayout>
+
+        </android.support.v4.widget.NestedScrollView>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/txtNoResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:fontFamily="@font/quicksand_bold"
+        android:text="No Class"
+        android:textColor="@color/colorLightBlack_1"
+        android:textSize="@dimen/_7sdp" />
+</RelativeLayout>

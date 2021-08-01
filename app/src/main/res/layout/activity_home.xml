@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAppBackgroundBlue"
+    android:focusableInTouchMode="true"
+    tools:context="com.shamlatech.activity.teacher.TeachersDashboard">
+
+    <RelativeLayout
+        android:id="@+id/relativeHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include
+            android:id="@+id/includeAppBar1"
+            layout="@layout/layout_app_bar_1" />
+
+        <include
+            android:id="@+id/includeAppBar3"
+            layout="@layout/layout_app_bar_3" />
+
+        <include
+            android:id="@+id/includeAppBar8"
+            layout="@layout/layout_app_bar_8" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/frameContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/includeBottomBar"
+        android:layout_below="@+id/relativeHeader"></FrameLayout>
+
+    <include
+        android:id="@+id/includeBottomBar"
+        layout="@layout/layout_bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+</RelativeLayout>

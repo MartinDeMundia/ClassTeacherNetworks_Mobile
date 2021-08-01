@@ -1,0 +1,488 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAppBackgroundBlue"
+    android:focusableInTouchMode="true"
+    tools:context="com.shamlatech.activity.teacher.TeachersDashboard">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/includeBottomBar"
+        android:layout_below="@+id/includeAppBar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/relativeIntro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/pagerChildren"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_270sdp"></android.support.v4.view.ViewPager>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/linearEducationalProgress"
+                        style="@style/linear_Button_1"
+                        android:background="@drawable/button_green">
+
+                        <ImageView
+                            android:tint="@color/colorWhite"
+                            android:layout_width="@dimen/_20sdp"
+                            android:layout_height="@dimen/_20sdp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginRight="@dimen/_5sdp"
+                            android:src="@drawable/ic_dashboard_educational_progress" />
+
+                        <TextView
+                            style="@style/linear_Button_Text_1"
+                            android:text="Educational Progress" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linearBehaviouralProgress"
+                        style="@style/linear_Button_1"
+                        android:background="@drawable/button_blue">
+
+                        <ImageView
+                            android:tint="@color/colorWhite"
+                            android:layout_width="@dimen/_20sdp"
+                            android:layout_height="@dimen/_20sdp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginRight="@dimen/_5sdp"
+                            android:src="@drawable/ic_dashboard_behavioural_progress" />
+
+
+                        <TextView
+                            style="@style/linear_Button_Text_1"
+                            android:text="Behavioural progress" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/linearHealthReport"
+                        style="@style/linear_Button_1"
+                        android:background="@drawable/button_red">
+
+                        <ImageView
+                            android:tint="@color/colorWhite"
+                            android:layout_width="@dimen/_20sdp"
+                            android:layout_height="@dimen/_20sdp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginRight="@dimen/_5sdp"
+                            android:src="@drawable/ic_dashboard_health" />
+
+
+                        <TextView
+                            style="@style/linear_Button_Text_1"
+                            android:text="Health Report" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linearAttendance"
+                        style="@style/linear_Button_1"
+                        android:background="@drawable/button_orange">
+
+                        <ImageView
+                            android:tint="@color/colorWhite"
+                            android:layout_width="@dimen/_20sdp"
+                            android:layout_height="@dimen/_20sdp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginRight="@dimen/_5sdp"
+                            android:src="@drawable/ic_dashboard_attendance" />
+
+                        <TextView
+                            style="@style/linear_Button_Text_1"
+                            android:text="Attendance" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <LinearLayout
+                        android:id="@+id/linearResources"
+                        style="@style/linear_Button_1"
+                        android:background="@drawable/btn_c">
+                        <ImageView
+                            android:layout_width="@dimen/_20sdp"
+                            android:layout_height="@dimen/_20sdp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginRight="@dimen/_5sdp"
+                            android:src="@drawable/ic_dashboard_educational_progress"
+                            android:tint="@color/colorWhite" />
+                        <TextView
+                            style="@style/linear_Button_Text_1"
+                            android:text="Resources" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linearJournalReport"
+                        style="@style/linear_Button_1"
+                        android:background="@color/colorBtnLavenderNormal">
+
+                        <ImageView
+                            android:tint="@color/colorWhite"
+                            android:layout_width="@dimen/_20sdp"
+                            android:layout_height="@dimen/_20sdp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginRight="@dimen/_5sdp"
+                            android:src="@drawable/ic_dashboard_journal" />
+
+
+                        <TextView
+                            style="@style/linear_Button_Text_1"
+                            android:text="Journal" />
+                    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+                </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_7sdp">
+
+                    <RelativeLayout style="@style/relative_CardLook">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:orientation="horizontal"
+                            android:paddingBottom="@dimen/_3sdp"
+                            android:paddingTop="@dimen/_3sdp">
+
+                            <LinearLayout
+                                android:id="@+id/linearFees"
+                                style="@style/linear_Dashboard_1"
+                                android:layout_width="57dp"
+                                android:layout_height="31dp">
+
+                                <ImageView
+                                    android:layout_width="@dimen/_13sdp"
+                                    android:layout_height="@dimen/_13sdp"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginRight="@dimen/_3sdp"
+                                    android:src="@drawable/ic_dashboard_fees"
+                                    android:tint="@color/colorBtnChristiNormal" />
+
+                                <TextView
+                                    style="@style/linear_Button_Text_2"
+                                    android:layout_gravity="bottom"
+                                    android:gravity="bottom"
+                                    android:text="Fees"
+                                    android:textColor="@color/colorBtnChristiNormal"
+                                    android:textSize="6dp" />
+                            </LinearLayout>
+
+
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="5dp"
+                                android:layout_marginTop="5dp"
+                                android:background="@color/colorGray" />
+
+                            <LinearLayout
+                                android:id="@+id/linearCalendar"
+                                style="@style/linear_Dashboard_1"
+                                android:layout_width="76dp"
+                                android:layout_height="31dp">
+
+                                <ImageView
+                                    android:layout_width="@dimen/_13sdp"
+                                    android:layout_height="@dimen/_13sdp"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginRight="@dimen/_3sdp"
+                                    android:src="@drawable/ic_dashboard_calendar"
+                                    android:tint="@color/colorBtnLavenderNormal" />
+
+                                <TextView
+                                    style="@style/linear_Button_Text_2"
+                                    android:layout_gravity="bottom"
+                                    android:gravity="bottom"
+                                    android:text="Calendar"
+                                    android:textColor="@color/colorBtnLavenderNormal"
+                                    android:textSize="6dp" />
+
+                            </LinearLayout>
+
+
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="5dp"
+                                android:layout_marginTop="5dp"
+                                android:background="@color/colorGray" />
+
+                            <LinearLayout
+                                android:id="@+id/linearMedia"
+                                style="@style/linear_Dashboard_1"
+                                android:layout_width="62dp"
+                                android:layout_height="31dp">
+
+                                <ImageView
+                                    android:layout_width="@dimen/_13sdp"
+                                    android:layout_height="@dimen/_13sdp"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginRight="@dimen/_3sdp"
+                                    android:src="@drawable/ic_dashboard_media"
+                                    android:tint="@color/colorBtnRedNormal" />
+
+                                <TextView
+                                    style="@style/linear_Button_Text_2"
+                                    android:layout_gravity="bottom"
+                                    android:gravity="bottom"
+                                    android:text="Media"
+                                    android:textColor="@color/colorBtnRedNormal"
+                                    android:textSize="6dp" />
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="5dp"
+                                android:layout_marginTop="5dp"
+                                android:background="@color/colorGray" />
+
+                            <LinearLayout
+                                android:id="@+id/linearForums"
+                                style="@style/linear_Dashboard_1"
+                                android:layout_width="68dp"
+                                android:layout_height="31dp">
+
+                                <ImageView
+                                    android:layout_width="@dimen/_13sdp"
+                                    android:layout_height="@dimen/_13sdp"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginRight="@dimen/_3sdp"
+                                    android:src="@drawable/ic_dashboard_forum"
+                                    android:tint="@color/colorBtnBlueNormal" />
+
+                                <TextView
+                                    style="@style/linear_Button_Text_2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_gravity="bottom"
+                                    android:gravity="bottom"
+                                    android:text="Forums"
+                                    android:textColor="@color/colorBtnBlueNormal"
+                                    android:textSize="6dp" />
+
+                            </LinearLayout>
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="5dp"
+                                android:layout_marginTop="5dp"
+                                android:background="@color/colorGray" />
+                            <LinearLayout
+                                android:id="@+id/linearAbsentNote"
+                                style="@style/linear_Dashboard_1"
+                                android:layout_width="94dp"
+                                android:layout_height="33dp"
+                                android:paddingLeft="@dimen/_18sdp"
+                                android:paddingRight="@dimen/_18sdp">
+
+                                <ImageView
+                                    android:layout_width="@dimen/_15sdp"
+                                    android:layout_height="@dimen/_15sdp"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginRight="@dimen/_3sdp"
+                                    android:src="@drawable/ic_dashboard_absent"
+                                    android:tint="@color/colorBtnBlueNormal" />
+
+                                <TextView
+                                    style="@style/linear_Button_Text_2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_gravity="bottom"
+                                    android:gravity="bottom"
+                                    android:text="Absent Note"
+                                    android:textColor="@color/colorBtnBlueNormal"
+                                    android:textSize="6dp" />
+
+                            </LinearLayout>
+
+
+
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/linearPayments"
+                        style="@style/pay_btn"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/button_primary"
+                        android:visibility="invisible">
+
+                        <ImageView
+                            android:layout_width="@dimen/_20sdp"
+                            android:layout_height="@dimen/_20sdp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginRight="@dimen/_5sdp"
+                            android:src="@drawable/ic_attach_money"
+                            android:tint="@color/colorWhite" />
+
+
+                        <TextView
+                            style="@style/linear_Button_Text_1"
+                            android:text="FEES PAYMENT"
+                            android:visibility="invisible" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linearEmpty"
+                        android:visibility="invisible"
+                        style="@style/linear_Button_1"
+                        >
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_7sdp">
+
+                    <RelativeLayout style="@style/relative_CardLook">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/_1sdp"
+                                android:background="@drawable/card_header_gray">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:fontFamily="@font/quicksand_medium"
+                                    android:text="Announcement"
+                                    android:textAllCaps="true"
+                                    android:textColor="@color/colorPrimaryDark"
+                                    android:textSize="@dimen/_11sdp" />
+
+                                <ImageView
+                                    android:id="@+id/imgMore"
+                                    android:layout_width="@dimen/_30sdp"
+                                    android:layout_height="@dimen/_30sdp"
+                                    android:layout_alignParentRight="true"
+                                    android:foreground="?android:attr/selectableItemBackground"
+                                    android:src="@drawable/ic_more"
+                                    android:padding="@dimen/_4sdp"
+                                    android:tint="@color/colorPrimaryDark" />
+
+                            </RelativeLayout>
+
+                            <TextView
+                                android:id="@+id/txtNoNewAnnouncement"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginTop="@dimen/_15sdp"
+                                android:fontFamily="@font/quicksand_bold"
+                                android:text="No new announcement"
+                                android:textColor="@color/colorLightBlack_1"
+                                android:textSize="@dimen/_13sdp" />
+
+                            <android.support.v7.widget.RecyclerView
+                                android:id="@+id/recyclerAnnouncement"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:nestedScrollingEnabled="false"
+                                android:padding="5dp" />
+                        </LinearLayout>
+
+                    </RelativeLayout>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</RelativeLayout>

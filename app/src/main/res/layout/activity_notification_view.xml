@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context="com.shamlatech.activity.AnnouncementViewActivity">
+
+    <include
+        android:id="@+id/includeAppBar"
+        layout="@layout/layout_app_bar_5" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/nestedScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/includeBottomBar"
+        android:layout_below="@+id/includeAppBar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/_12sdp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txtCreatedOn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/quicksand_medium"
+                    android:text="Created On"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorBtnRedNormal"
+                    android:textSize="@dimen/_10sdp"
+                    tools:visibility="gone" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/relativeDate"
+                    android:layout_toRightOf="@+id/txtCreatedOn"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+                    <com.google.android.flexbox.FlexboxLayout
+                        android:id="@+id/flexboxTags"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:flexWrap="wrap" />
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/relativeDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/back_1">
+
+                    <TextView
+                        android:id="@+id/txtDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/quicksand_medium"
+                        android:paddingLeft="@dimen/_5sdp"
+                        android:paddingTop="@dimen/_3sdp"
+                        android:paddingRight="@dimen/_5sdp"
+                        android:paddingBottom="@dimen/_3sdp"
+                        android:text="Apirl, 21"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/_9sdp" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/txtHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:fontFamily="@font/quicksand_bold"
+                android:text="header"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/_13sdp" />
+
+
+            <TextView
+                android:id="@+id/txtBody"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:fontFamily="@font/quicksand_regular"
+                android:text="body of the content body of the content body of the content body of the content"
+                android:textColor="@color/colorDarkGray"
+                android:textSize="@dimen/_10sdp" />
+
+            <Button
+                android:id="@+id/snoozeButton"
+                style="@style/btn_Button_2"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="32dp"
+                android:fontFamily="@font/quicksand_bold"
+                android:text="Snooze"
+                android:textAllCaps="false"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <include
+        android:id="@+id/includeBottomBar"
+        layout="@layout/layout_bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>

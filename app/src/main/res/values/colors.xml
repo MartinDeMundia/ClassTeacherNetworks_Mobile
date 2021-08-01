@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#00A99E</color>
+    <color name="colorPrimaryDark">#018f86</color>
+
+    <color name="bg_row_background">#fa315b</color>
+    <color name="colorHyperLink">#0645AD</color>
+    <color name="colorTrans">#00ffffff</color>
+    <color name="colorWhite">#FFFEFE</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorTransRed">#13f93838</color>
+    <color name="colorRed">#f93838</color>
+    <color name="colorLightBlack">#404040</color>
+    <color name="colorLightBlack_1">#646464</color>
+    <color name="colorGray">#CCCCCC</color>
+    <color name="colorLightGray">#e6e6e6</color>
+    <color name="colorLightGray_1">#f5f5f5</color>
+    <color name="colorDarkGray">#797979</color>
+
+    <color name="colorLoginBG">#CC21bbaf</color>
+    <color name="colorBtnPrimaryNormal">#21bbaf</color>
+    <color name="colorBtnPrimaryClick">#009986</color>
+
+    <color name="colorBtnYellowPressed">#52296F</color>
+    <color name="colorBtnLavenderNormal">#52296F</color>
+
+
+    <color name="colorBtnChristiNormal">#86A80C</color>
+
+    <color name="colorBtnRedNormal">#FF5C5E</color>
+    <color name="colorBtnRedClick">#e74446</color>
+
+    <color name="colorBtnBlueNormal">#29AAE1</color>
+    <color name="colorBtnBlueClick">#2599ca</color>
+
+    <color name="colorBtnOrangeNormal">#EF922A</color>
+    <color name="colorBtnOrangeClick">#dc8524</color>
+
+    <color name="colorBtnGreenNormal">#6BAF4C</color>
+    <color name="colorBtnGreenClick">#619f44</color>
+
+
+    <color name="colorGradientTop">#00a994</color>
+    <color name="colorGradientCenter">#21bbaf</color>
+    <color name="colorGradientBottom">#86d0c3</color>
+
+    <color name="colorProgressLoading">#FF5C5E</color>
+    <color name="colorAppBackgroundBlue">#ade7f7f6</color>
+    <color name="colorAppBackgroundBlue_1">#f2fdfd</color>
+
+    <color name="colorScrollBackground">#89b8e9e5</color>
+    <color name="colorScrollThumb">#21bbaf</color>
+
+    <color name="colorLineDivider">#4621bbaf</color>
+
+
+    <color name="colorAssignmentSubject">#b1b1b1</color>
+    <color name="colorAssignmentDate">#919191</color>
+
+    <color name="colorTab1Active">#FFFFFF</color>
+    <color name="colorTab1Inactive">#E7F7F6</color>
+
+    <color name="colorCommonChristi">#86A80C</color>
+    <color name="colorCommonChristiDark">#6c8708</color>
+    <color name="colorCommonRed">#FC5B61</color>
+    <color name="colorCommonRedDark">#ea4f55</color>
+    <color name="colorCommonGreen">#6BAF4C</color>
+    <color name="colorCommonGreenDark">#568b3e</color>
+    <color name="colorCommonLavender">#52296F</color>
+    <color name="colorCommonBlue">#29AAE1</color>
+    <color name="colorCommonBlueDark">#2599ca</color>
+    <color name="colorCommonOrange">#EF922A</color>
+    <color name="colorCommonOrangeDark">#dc8524</color>
+    <color name="colorCommonBlueLight">#4329aae1</color>
+
+    <color name="colorTabPrimary">#00A99E</color>
+    <color name="colorTabChristi">#86A80C</color>
+    <color name="colorTabLavender">#52296F</color>
+    <color name="colorTabGreen">#6BAF4C</color>
+    <color name="colorTabBlue">#29AAE1</color>
+    <color name="colorTabRed">#FF5C5E</color>
+    <color name="colorTabOrange">#EF922A</color>
+
+    <color name="colorTabChristiInactive">#86A80C</color>
+    <color name="colorTabLavenderInactive">#52296f</color>
+    <color name="colorTabGreenInactive">#6BAF4C</color>
+    <color name="colorTabBlueInactive">#29AAE1</color>
+    <color name="colorTabRedInactive">#FF5C5E</color>
+    <color name="colorTabOrangeInactive">#EF922A</color>
+
+    <color name="colorBlueIndicatorBar">#1329aae1</color>
+
+    <color name="colorListBlueAlternate1">#0d29aae1</color>
+    <color name="colorListBlueAlternate2">#0429aae1</color>
+
+    <color name="colorMessageDate">#7c7c7c</color>
+    <color name="colorMyMessageBack">#FFFFFF</color>
+    <color name="colorMyMessageBackBorder">#3fcccccc</color>
+    <color name="colorOtherMessageBack">#1729aae1</color>
+    <color name="colorOtherMessageBackBorder">#4529aae1</color>
+
+    <color name="whitish">#e7eff6</color>
+    <color name="green">#2fa441</color>
+    <color name="secondary">#757575</color>
+    <color name="currency_green">#3FD456</color>
+    <color name="currency_red">#E04F5F</color>
+
+</resources>

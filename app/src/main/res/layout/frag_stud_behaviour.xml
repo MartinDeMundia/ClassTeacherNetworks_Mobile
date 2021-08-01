@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/scrollContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:paddingBottom="@dimen/_50sdp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10sdp"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerOverAllBehaviour"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:nestedScrollingEnabled="false"
+                    android:paddingBottom="@dimen/_10sdp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_1sdp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toLeftOf="@+id/txtIncidents"
+                            android:fontFamily="@font/quicksand_light"
+                            android:text="Incidents"
+                            android:textColor="@color/colorAssignmentSubject"
+                            android:textSize="@dimen/_11sdp" />
+
+
+                        <TextView
+                            android:id="@+id/txtIncidents"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/box_blue"
+                            android:fontFamily="@font/quicksand_bold"
+                            android:paddingBottom="@dimen/_2sdp"
+                            android:paddingLeft="@dimen/_3sdp"
+                            android:paddingRight="@dimen/_3sdp"
+                            android:paddingTop="@dimen/_2sdp"
+                            android:text="3"
+                            android:textColor="@color/colorCommonBlue"
+                            android:textSize="@dimen/_9sdp"
+                            android:textStyle="bold" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_1sdp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toLeftOf="@+id/txtActionTaken"
+                            android:fontFamily="@font/quicksand_light"
+                            android:text="Actions taken"
+                            android:textColor="@color/colorAssignmentSubject"
+                            android:textSize="@dimen/_11sdp" />
+
+                        <TextView
+                            android:id="@+id/txtActionTaken"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/box_blue"
+                            android:fontFamily="@font/quicksand_bold"
+                            android:paddingBottom="@dimen/_2sdp"
+                            android:paddingLeft="@dimen/_3sdp"
+                            android:paddingRight="@dimen/_3sdp"
+                            android:paddingTop="@dimen/_2sdp"
+                            android:text="YES"
+                            android:textColor="@color/colorCommonBlue"
+                            android:textSize="@dimen/_9sdp"
+                            android:textStyle="bold" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_toLeftOf="@+id/linearBehaviour"
+                        android:fontFamily="@font/quicksand_bold"
+                        android:text="Overall Behaviour "
+                        android:textColor="@color/colorCommonBlueDark"
+                        android:textSize="@dimen/_14sdp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:id="@+id/linearBehaviour"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="10dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txtOverAllBehaviour"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:fontFamily="@font/quicksand_bold"
+                            android:padding="@dimen/_2sdp"
+                            android:text="VERY GOOD"
+                            android:textColor="@color/colorCommonBlue"
+                            android:textSize="@dimen/_9sdp"
+                            android:textStyle="bold" />
+
+                        <com.iarcuschin.simpleratingbar.SimpleRatingBar
+                            android:id="@+id/rattingOverAllBehaviour"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:srb_borderColor="@color/colorCommonBlue"
+                            app:srb_fillColor="@color/colorCommonBlue"
+                            app:srb_isIndicator="true"
+                            app:srb_numberOfStars="5"
+                            app:srb_rating="3.5"
+                            app:srb_starBorderWidth="2"
+                            app:srb_starSize="@dimen/_18sdp"
+                            app:srb_stepSize="0.5" />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <View style="@style/viewDivider" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10sdp"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    style="@style/relative_CardLook"
+                    android:padding="@dimen/_10sdp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/layoutDummy1"
+                        android:fontFamily="@font/quicksand_medium"
+                        android:text="Detailed behaviour report"
+                        android:textAllCaps="true"
+                        android:textColor="@color/colorCommonBlueDark"
+                        android:textSize="@dimen/_9sdp" />
+
+                    <include
+                        android:id="@+id/layoutDummy1"
+                        layout="@layout/layout_share_email_download"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"></include>
+                </RelativeLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerDetailedBehaviour"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:nestedScrollingEnabled="false"
+                    android:paddingBottom="@dimen/_10sdp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fabEditBehaviour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10sdp"
+        android:src="@drawable/ic_edit"
+        app:backgroundTint="@color/colorCommonBlue"
+        app:layout_anchor="@+id/scrollContent"
+        app:layout_anchorGravity="bottom|right|end"
+        app:layout_behavior="com.shamlatech.utils.ScrollAwareFABBehavior" />
+
+    <include
+        android:id="@+id/ProgressInner"
+        layout="@layout/loading_progress"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+
+</android.support.design.widget.CoordinatorLayout>

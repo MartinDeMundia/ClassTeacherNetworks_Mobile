@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/linearAssignment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/_2sdp"
+        android:paddingLeft="@dimen/_5sdp"
+        android:paddingRight="@dimen/_5sdp"
+        android:paddingTop="@dimen/_2sdp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txtAssignment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/txtSubject"
+                android:fontFamily="@font/quicksand_regular"
+                android:text="Subject"
+                android:textColor="@color/colorLightBlack"
+                android:textSize="@dimen/_7sdp" />
+
+
+            <TextView
+                android:id="@+id/txtSubject"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="right"
+                android:background="?android:attr/selectableItemBackground"
+                android:fontFamily="@font/quicksand_bold"
+                android:gravity="right"
+                android:text="Subject"
+                android:textColor="@color/colorLightBlack_1"
+                android:textSize="@dimen/_6sdp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txtDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/txtStatus"
+                android:fontFamily="@font/quicksand_regular"
+                android:text="Subject"
+                android:textColor="@color/colorDarkGray"
+                android:textSize="@dimen/_6sdp" />
+
+            <TextView
+                android:id="@+id/txtStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="right"
+                android:background="?android:attr/selectableItemBackground"
+                android:fontFamily="@font/quicksand_bold"
+                android:gravity="right"
+                android:text="Subject"
+                android:textColor="@color/colorLightBlack_1"
+                android:textSize="@dimen/_6sdp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+    </LinearLayout>
+</RelativeLayout>

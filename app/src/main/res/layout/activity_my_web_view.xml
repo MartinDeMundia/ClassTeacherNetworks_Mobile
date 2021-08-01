@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:background="#fff"
+        app:elevation="1dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/back_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="?selectableItemBackgroundBorderless"
+                android:padding="8dp"
+                android:tint="#000"
+                android:src="@drawable/ic_close" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_secure"
+                android:padding="8dp"
+                android:id="@+id/lock"
+                android:layout_toRightOf="@id/back_btn"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/lock"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:text="Ipay Limited"
+                    android:textSize="14sp"
+                    android:textColor="#000"
+                    android:fontFamily="@font/quicksand_regular"
+                    android:layout_height="wrap_content" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="https://"
+                        android:fontFamily="@font/quicksand_regular"
+                        android:textSize="12sp"
+                        android:textColor="#3FD456"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:textSize="12sp"
+                        android:id="@+id/baseurl"
+                        android:textColor="#000"
+                        android:fontFamily="@font/quicksand_light"
+                        android:text="www.ipayafrica.com/pay..."
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <WebView
+        android:id="@+id/webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/complete_btn"
+        android:layout_below="@id/appbar"
+        />
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:id="@+id/complete_btn"
+        android:visibility="gone"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="8dp"
+        android:clickable="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/btn_c"
+        android:layout_height="48dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="COMPLETE"
+            android:layout_gravity="center"
+            android:padding="8dp"
+            android:textAllCaps="true"
+            android:textSize="12sp"
+            android:fontFamily="@font/quicksand_regular"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:layout_height="wrap_content" />
+    </FrameLayout>
+</RelativeLayout>

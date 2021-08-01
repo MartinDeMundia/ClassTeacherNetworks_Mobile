@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CheckBox xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cbkList"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_2sdp"
+    android:background="?android:attr/selectableItemBackground"
+    android:fontFamily="@font/quicksand_medium"
+    android:text="empty"
+    android:textColor="@color/colorLightBlack" />

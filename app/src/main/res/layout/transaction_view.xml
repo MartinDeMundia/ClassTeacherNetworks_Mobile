@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView android:layout_width="match_parent"
+    android:layout_height="100dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginBottom="10dp"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    app:cardElevation=".2dp"
+    app:cardCornerRadius="10dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="32dp"
+            android:id="@+id/icon"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
+            android:src="@drawable/ic_money_bag"
+            android:layout_height="32dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Invoice Number# "
+            android:id="@+id/invoice"
+            android:layout_alignTop="@id/icon"
+            android:textColor="#000"
+            android:layout_toRightOf="@id/icon"
+            android:textSize="14sp"
+
+            android:fontFamily="@font/quicksand_regular"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_alignTop="@id/icon"
+            android:text="MXHS71"
+            android:layout_toRightOf="@id/invoice"
+            android:id="@+id/title"
+            android:textColor="#000"
+            android:textSize="14sp"
+            android:fontFamily="@font/quicksand_regular"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_below="@id/title"
+            android:id="@+id/name"
+            android:textColor="@color/secondary"
+            android:textSize="12sp"
+            android:fontFamily="@font/quicksand_light"
+            android:layout_alignRight="@id/title"
+            android:layout_alignLeft="@id/invoice"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_below="@id/name"
+            android:text="March 10, 2019"
+            android:id="@+id/date"
+            android:textColor="@color/secondary"
+            android:textSize="12sp"
+            android:fontFamily="@font/quicksand_light"
+            android:layout_alignRight="@id/title"
+            android:layout_alignLeft="@id/invoice"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:id="@+id/money"
+            android:layout_margin="4dp"
+            android:gravity="center_vertical"
+            android:layout_alignParentRight="true"
+            android:orientation="horizontal"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="KES. 1,027"
+                android:id="@+id/amount"
+                android:fontFamily="@font/quicksand_regular"
+                android:textColor="@color/currency_green"
+                android:textStyle="bold"
+                android:textSize="12sp"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_margin="4dp"
+                android:id="@+id/type_arrow"
+                android:tint="@color/currency_green"
+                android:src="@drawable/ic_arrow_upward"
+                android:layout_height="16dp" />
+        </LinearLayout>
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

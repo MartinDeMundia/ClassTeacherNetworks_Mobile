@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/intro_back"
+    tools:context=".RoleSelectionActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/linearRole"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:fontFamily="@font/quicksand_bold"
+        android:gravity="center"
+        android:padding="@dimen/_10sdp"
+        android:text="Please select subscription type"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/_16sdp" />
+
+        <LinearLayout
+            android:id="@+id/linearRole"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/linearTerm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/_25sdp"
+                android:paddingRight="@dimen/_25sdp">
+
+                <RelativeLayout
+                    android:id="@+id/relativeRoleParent"
+                    style="@style/relative_Role">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/quicksand_medium"
+                        android:gravity="center_vertical"
+                        android:text="100"
+                        android:layout_marginLeft="20dp"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="30sp"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+                <TextView
+                    style="@style/text_Role"
+
+                    android:fontFamily="@font/quicksand_medium"
+                    android:text="Termly"
+                    android:textSize="@dimen/_14sdp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="@dimen/_3sdp"
+                android:layout_height="match_parent"
+                android:background="@color/colorWhite"></View>
+
+            <LinearLayout
+                android:id="@+id/linearYear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/_25sdp"
+                android:paddingRight="@dimen/_25sdp">
+
+                <RelativeLayout
+                    android:id="@+id/relativeRoleTeacher"
+                    style="@style/relative_Role">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/quicksand_medium"
+                        android:gravity="center_vertical"
+                        android:text="270"
+                        android:layout_marginLeft="20dp"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="30sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <TextView
+                    style="@style/text_Role"
+                    android:fontFamily="@font/quicksand_medium"
+                    android:text="Yearly"
+                    android:textSize="@dimen/_14sdp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/linearRole"
+        >
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:id="@+id/f"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="3dp"
+        android:fontFamily="@font/quicksand_bold"
+        android:text="Enter mpesa phone number"
+        android:textColor="@color/colorWhite"
+        android:textSize="16sp"
+        android:id="@+id/text"
+        android:textStyle="normal" />
+    </RelativeLayout>
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/editTextPhoneNumber"
+        style="@style/edt_Login_EditText"
+
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/quicksand_medium"
+        android:hint="ENTER PHONE NUMBER"
+        android:inputType="text"
+        app:met_iconLeft="@drawable/ic_phone" />
+</LinearLayout>
+        <Button
+            android:id="@+id/sendButton"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="32dp"
+            style="@style/btn_Button_2"
+            android:fontFamily="@font/quicksand_bold"
+            android:text="Subscribe"
+
+            android:textAllCaps="false"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

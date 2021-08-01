@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VerifyActivity">
+
+    <LinearLayout
+        android:layout_width="@dimen/_250sdp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/verify_back"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/_20sdp"
+        android:paddingLeft="@dimen/_10sdp"
+        android:paddingRight="@dimen/_10sdp"
+        android:paddingTop="@dimen/_20sdp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/quicksand_medium"
+            android:gravity="center"
+            android:text="Verifying \n your details"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/_14sdp" />
+
+        <TextView
+            android:id="@+id/txtStep"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/quicksand_regular"
+            android:padding="@dimen/_10sdp"
+            android:text="PART 1 OF 2"
+            android:textSize="@dimen/_7sdp" />
+
+        <TextView
+            android:id="@+id/txtComments"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/quicksand_regular"
+            android:gravity="center"
+            android:padding="@dimen/_15sdp"
+            android:text="@string/Verify_Step_1"
+            android:textSize="@dimen/_8sdp" />
+
+        <LinearLayout
+            android:id="@+id/linearPinEnter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.alimuzaffar.lib.pin.PinEntryEditText
+                android:id="@+id/pinOTP"
+                android:layout_width="@dimen/_200sdp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:cursorVisible="false"
+                android:digits="1234567890"
+                android:fontFamily="@font/quicksand_bold"
+                android:inputType="number"
+                android:maxLength="4"
+                android:padding="@dimen/_15sdp"
+                android:textColor="@color/colorPrimary"
+                android:textIsSelectable="false"
+                android:textSize="@dimen/_14sdp"
+                app:pinBackgroundDrawable="@drawable/pin_back"
+                app:pinCharacterSpacing="@dimen/_10sdp"
+                app:pinTextBottomPadding="18dp" />
+
+            <TextView
+                android:id="@+id/txtOTP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/quicksand_regular"
+                    android:text="Did not receive pin? "
+                    android:textSize="@dimen/_7sdp" />
+
+                <TextView
+                    android:id="@+id/txtResent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/quicksand_bold"
+                    android:text=" Resend in 60s"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/_7sdp" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearVerify"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.dx.dxloadingbutton.lib.LoadingButton
+                android:id="@+id/loadingButton"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="200sp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/quicksand_bold"
+                app:lb_btnColor="@color/colorProgressLoading"
+                app:lb_btnText="Try Again" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <include
+        android:id="@+id/Custom_Progress"
+        layout="@layout/loading_progress"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+</RelativeLayout>

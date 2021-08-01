@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/card_look"
+    android:orientation="vertical">
+
+    <!--    <EditText
+            android:id="@+id/edtAdate"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@null"
+            android:fontFamily="@font/quicksand_regular"
+            android:gravity="top"
+            android:hint="Type date to be absent"
+            android:padding="@dimen/_5sdp"
+            android:textSize="@dimen/_13sdp" />-->
+    <DatePicker
+        android:id="@+id/edtAdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:calendarViewShown="false"
+        android:datePickerMode="spinner"
+        android:fontFamily="@font/quicksand_regular"
+        android:gravity="top"
+        android:hint="Type date to be absent"
+        android:padding="@dimen/_5sdp"
+        android:textSize="@dimen/_13sdp" />
+
+    <View
+        android:id="@+id/viewBorder0"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/edtAdate"
+        android:background="@color/colorLightGray_1"></View>
+
+
+    <RadioGroup
+        android:id="@+id/radiogroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/viewBorder0"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radio_happy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/smiling"
+            android:gravity="bottom"
+            android:text=" happy"
+            android:textColor="@color/colorBtnYellowPressed"
+            android:textSize="8sp"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/radio_exited"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/excited"
+            android:gravity="bottom|end"
+            android:text="excited"
+            android:textColor="@color/colorBtnYellowPressed"
+            android:textSize="8sp"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/radio_sad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/sad"
+            android:gravity="bottom|end"
+            android:text="     sad"
+            android:textColor="@color/colorBtnYellowPressed"
+            android:textSize="8sp"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/radio_angry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/angry"
+            android:gravity="bottom|end"
+            android:text=" angry"
+            android:textColor="@color/colorBtnYellowPressed"
+            android:textSize="8sp"
+            android:textStyle="bold" />
+
+
+    </RadioGroup>
+
+
+    <com.vanniktech.emoji.EmojiEditText
+        android:id="@+id/edtTopic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radiogroup"
+        android:layout_marginTop="10dp"
+        android:gravity="top"
+        android:hint="Type journal explanation"
+        android:imeOptions="actionSend"
+        android:maxLines="3"
+        android:padding="@dimen/_5sdp" />
+    <!--    <EditText
+        android:id="@+id/edtTopic"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_100sdp"
+        android:layout_below="@+id/edtAdate"
+        android:layout_marginTop="10dp"
+        android:background="@null"
+        android:fontFamily="@font/quicksand_regular"
+        android:gravity="top"
+        android:hint="Type journal explanation"
+        android:padding="@dimen/_5sdp"
+        android:textSize="@dimen/_13sdp" />-->
+
+    <View
+        android:id="@+id/viewBorder"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/edtTopic"
+        android:background="@color/colorLightGray_1"></View>
+
+    <RelativeLayout
+        android:id="@+id/relativeTo"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/viewBorder"
+        android:layout_margin="1dp"
+        android:background="@drawable/card_look_1"
+        android:orientation="vertical"
+        android:paddingRight="@dimen/_10sdp">
+
+        <Spinner
+            android:id="@+id/spinnerViewers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@color/colorTrans"></Spinner>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeSend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeTo"
+        android:background="@drawable/card_footer_light_blue">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/quicksand_bold"
+            android:padding="@dimen/_10sdp"
+            android:text="SEND"
+            android:textColor="@color/colorCommonBlueDark"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+</RelativeLayout>

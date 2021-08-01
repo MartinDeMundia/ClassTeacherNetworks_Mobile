@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimary">
+
+    <RelativeLayout
+        android:id="@+id/relativeAppBar3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_5sdp">
+
+        <ImageView
+            android:id="@+id/imgAppBack3"
+            android:layout_width="@dimen/_35sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_centerVertical="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:padding="@dimen/_9sdp"
+            android:src="@drawable/ic_app_bar_back"
+            android:tint="@color/colorWhite" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imgAppBarImage3"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_toRightOf="@+id/imgAppBack3"
+            android:padding="@dimen/_5sdp"
+            android:src="@drawable/ic_dummy_user" />
+
+        <TextView
+            android:id="@+id/txtAppBarHeader3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/imgAppBarImage3"
+            android:layout_toLeftOf="@+id/imgAppSearch3"
+            android:text="Empty"
+            android:paddingTop="@dimen/_5sdp"
+            android:paddingBottom="@dimen/_5sdp"
+            android:textAllCaps="true"
+            android:fontFamily="@font/quicksand_medium"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/_14sdp" />
+
+        <ImageView
+            android:id="@+id/imgAppSearch3"
+            android:layout_width="@dimen/_35sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:padding="@dimen/_9sdp"
+            android:src="@drawable/ic_app_bar_search"
+            android:tint="@color/colorWhite" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relativeMarks"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?android:attr/selectableItemBackground"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/_1sdp"
+    android:paddingLeft="@dimen/_8sdp"
+    android:paddingRight="@dimen/_8sdp">
+
+    <LinearLayout
+        android:id="@+id/linearHealthOccurrence"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txtSubject"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.8"
+            android:fontFamily="@font/quicksand_regular"
+            android:text="CLASS TEACHER"
+            android:textSize="@dimen/_11sdp" />
+
+        <TextView
+            android:id="@+id/txtDate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.5"
+            android:fontFamily="@font/quicksand_regular"
+            android:text="12.02.18"
+            android:textColor="@color/colorCommonRed"
+            android:textSize="@dimen/_10sdp" />
+
+        <TextView
+            android:id="@+id/txtAction"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.7"
+            android:fontFamily="@font/quicksand_regular"
+            android:gravity="right"
+            android:text="CLASS TEACHER"
+            android:textColor="@color/colorCommonRed"
+            android:textSize="@dimen/_10sdp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAppBackgroundBlue"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/card_look_1"
+        android:orientation="vertical"
+        android:padding="@dimen/_7sdp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/spinnerSubject"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:text="Subject"
+            android:fontFamily="@font/quicksand_regular"
+            android:textAllCaps="true"
+            android:textSize="@dimen/_7sdp" />
+
+        <Spinner
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:id="@+id/spinnerSubject"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorTrans"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"></Spinner>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorLightGray"></View>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerClasses"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+</LinearLayout>

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/scrollContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10sdp"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerOverallResult"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:nestedScrollingEnabled="false"></android.support.v7.widget.RecyclerView>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerAssignment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:nestedScrollingEnabled="false"></android.support.v7.widget.RecyclerView>
+
+                <TextView
+                    android:background="@color/colorWhite"
+                    android:padding="@dimen/_5sdp"
+                    android:id="@+id/txtViewAssignment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="View All Assignment"
+                    android:fontFamily="@font/quicksand_medium"
+                    android:textColor="@color/colorCommonGreenDark"
+                    android:textSize="@dimen/_6sdp"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/txtOverAllPerformance"
+                        android:fontFamily="@font/quicksand_bold"
+                        android:text="Overall Performance "
+                        android:textColor="@color/colorCommonGreenDark"
+                        android:textSize="@dimen/_8sdp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txtOverAllPerformance"
+                        android:layout_width="@dimen/_16sdp"
+                        android:layout_height="@dimen/_16sdp"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/grade_back"
+                        android:fontFamily="@font/quicksand_bold"
+                        android:gravity="center"
+                        android:text="A"
+                        android:textColor="@color/colorCommonGreenDark"
+                        android:textSize="@dimen/_8sdp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="@color/colorGray"></View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10sdp"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    style="@style/relative_CardLook"
+                    android:paddingBottom="@dimen/_3sdp"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:paddingRight="@dimen/_10sdp"
+                    android:paddingTop="@dimen/_3sdp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/layoutDummy1"
+                        android:fontFamily="@font/quicksand_medium"
+                        android:text="DETAILED ASSESSMENT REPORT"
+                        android:textAllCaps="true"
+                        android:textColor="@color/colorCommonGreenDark"
+                        android:textSize="@dimen/_6sdp" />
+
+                    <include
+                        android:id="@+id/layoutDummy1"
+                        layout="@layout/layout_share_email_download"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"></include>
+                </RelativeLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerExamResult"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:nestedScrollingEnabled="false"></android.support.v7.widget.RecyclerView>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fabEditEducation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10sdp"
+        android:src="@drawable/ic_edit"
+        app:backgroundTint="@color/colorCommonGreen"
+        app:fabSize="normal"
+        app:layout_anchor="@+id/scrollContent"
+        app:layout_anchorGravity="bottom|right|end"
+        app:layout_behavior="com.shamlatech.utils.ScrollAwareFABBehavior" />
+
+    <include
+        android:id="@+id/ProgressInner"
+        layout="@layout/loading_progress"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+
+</android.support.design.widget.CoordinatorLayout>

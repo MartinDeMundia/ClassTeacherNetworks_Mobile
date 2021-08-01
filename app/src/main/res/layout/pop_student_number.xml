@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/card_look"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/linearRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="@dimen/_16sdp"
+        android:layout_marginRight="@dimen/_16sdp"
+        android:background="@drawable/box_white_fill"
+        android:orientation="vertical"
+        android:padding="@dimen/_10sdp">
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+
+                <TextView
+                    android:id="@+id/txtLabel2"
+                    android:layout_width="331dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/txtFeeTotal"
+                    android:fontFamily="@font/quicksand_medium"
+                    android:text="Fill in Student Details"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorCommonChristi"
+                    android:textSize="@dimen/_11sdp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <com.rengwuxian.materialedittext.MaterialAutoCompleteTextView
+                    android:id="@+id/edtSchool"
+                    style="@style/edt_Login_EditText"
+                    android:layout_width="match_parent"
+                    android:fontFamily="@font/quicksand_medium"
+                    android:hint="School"
+                    android:inputType="text" />
+
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/edtNemisNo"
+                    style="@style/edt_Login_EditText"
+                    android:layout_width="match_parent"
+                    android:fontFamily="@font/quicksand_medium"
+                    android:hint="Nemis"
+                    android:inputType="text" />
+
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/edtFirstName"
+                    style="@style/edt_Login_EditText"
+                    android:layout_width="match_parent"
+                    android:fontFamily="@font/quicksand_medium"
+                    android:hint="First Name"
+                    android:inputType="text" />
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/edtSecondName"
+                    style="@style/edt_Login_EditText"
+                    android:layout_width="match_parent"
+                    android:fontFamily="@font/quicksand_medium"
+                    android:hint="Second Name"
+                    android:inputType="text" />
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/edtLastName"
+                    style="@style/edt_Login_EditText"
+                    android:layout_width="match_parent"
+                    android:fontFamily="@font/quicksand_medium"
+                    android:hint="Last Name"
+                    android:inputType="text" />
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/edtGender"
+                    style="@style/edt_Login_EditText"
+                    android:layout_width="match_parent"
+                    android:fontFamily="@font/quicksand_medium"
+                    android:hint="Gender"
+                    android:inputType="text" />
+
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/edtBirthday"
+                    style="@style/edt_Login_EditText"
+                    android:layout_width="match_parent"
+                    android:fontFamily="@font/quicksand_medium"
+                    android:hint="Birthday"
+                    android:inputType="text" />
+
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/edtStudentCode"
+                    style="@style/edt_Login_EditText"
+                    android:layout_width="match_parent"
+                    android:fontFamily="@font/quicksand_medium"
+                    android:hint="Student Code"
+                    android:inputType="text" />
+
+
+                <Button
+                    android:id="@+id/buttonOk"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:background="@color/colorPrimary"
+                    android:fontFamily="@font/quicksand_bold"
+                    android:text="Save"
+                    android:textColor="#fff" />
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

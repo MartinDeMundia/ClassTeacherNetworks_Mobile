@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/_5sdp"
+    android:layout_marginLeft="@dimen/_10sdp"
+    android:layout_marginRight="@dimen/_10sdp"
+    android:layout_marginTop="@dimen/_5sdp"
+    android:background="?android:attr/selectableItemBackground"
+    app:cardCornerRadius="@dimen/_2sdp">
+
+    <LinearLayout
+        android:id="@+id/linearGroupMaker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/_5sdp"
+        android:paddingBottom="@dimen/_5sdp"
+        android:paddingLeft="@dimen/_10sdp"
+        android:paddingRight="@dimen/_10sdp"
+
+
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txtGroupName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/txtSubjectClass"
+                android:ellipsize="end"
+                android:fontFamily="@font/quicksand_medium"
+                android:maxLines="1"
+                android:text="Group Name"
+                android:textColor="@color/colorLightBlack"
+                android:textSize="@dimen/_7sdp" />
+
+
+            <TextView
+                android:id="@+id/txtSubjectClass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:fontFamily="@font/quicksand_bold"
+                android:text="Subject, Class A"
+                android:textColor="@color/colorLightBlack"
+                android:textSize="@dimen/_5sdp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txtGroupMember"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/imgMenu"
+                android:ellipsize="end"
+                android:fontFamily="@font/quicksand_regular"
+                android:maxLines="1"
+                android:paddingTop="@dimen/_5sdp"
+                android:text="body of the content body of the content body of the content body of the content"
+                android:textColor="@color/colorDarkGray"
+                android:textSize="@dimen/_6sdp" />
+
+
+            <ImageView
+                android:id="@+id/imgMenu"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_alignParentRight="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:padding="@dimen/_4sdp"
+                android:src="@drawable/ic_more"
+                android:tint="@color/colorPrimaryDark" />
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

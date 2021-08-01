@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearClass"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/_10sdp"
+    android:background="?android:attr/selectableItemBackground"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/relativeListBack"
+        style="@style/relative_CardLook"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_5sdp"
+            android:background="@drawable/card_header_christi"></View>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/_5sdp"
+            android:paddingLeft="@dimen/_10sdp"
+            android:paddingRight="@dimen/_10sdp"
+            android:paddingTop="@dimen/_5sdp">
+
+            <TextView
+                android:id="@+id/txtFeeHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/txtFeeTotal"
+                android:fontFamily="@font/quicksand_medium"
+                android:text="FEE STATUS"
+                android:textAllCaps="true"
+                android:textColor="@color/colorCommonChristi"
+                android:textSize="@dimen/_7sdp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtFeeTotal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:fontFamily="@font/quicksand_regular"
+                android:gravity="center"
+                android:text="0.00"
+                android:textColor="@color/colorCommonChristiDark"
+                android:textSize="@dimen/_6sdp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorCommonChristi" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerFees"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:nestedScrollingEnabled="false"
+            android:padding="@dimen/_8sdp" />
+
+    </LinearLayout>
+</LinearLayout>

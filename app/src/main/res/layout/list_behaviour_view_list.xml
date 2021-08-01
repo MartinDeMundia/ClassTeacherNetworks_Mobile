@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/linearBehaviours"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/_8sdp"
+        android:paddingRight="@dimen/_8sdp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txtBehaviour"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/quicksand_regular"
+                android:padding="@dimen/_2sdp"
+                android:text="Subject"
+                android:layout_toLeftOf="@+id/txtYesNo"
+                android:textColor="@color/colorDarkGray"
+                android:textSize="@dimen/_11sdp" />
+
+            <TextView
+                android:id="@+id/txtYesNo"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:fontFamily="@font/quicksand_bold"
+                android:padding="1dp"
+                android:text="YES"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/colorLightBlack"
+                android:textSize="@dimen/_11sdp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/txtAction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right"
+            android:background="@drawable/behaviour_action_back_line"
+            android:fontFamily="@font/quicksand_medium"
+            android:gravity="right"
+            android:maxWidth="@dimen/_100sdp"
+            android:paddingRight="@dimen/_5sdp"
+            android:text="Action Taken"
+            android:textColor="@color/colorLightBlack"
+            android:textSize="@dimen/_9sdp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</RelativeLayout>

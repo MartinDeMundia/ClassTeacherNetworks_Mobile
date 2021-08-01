@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/card_look"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/edtTopic"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_100sdp"
+        android:background="@null"
+        android:fontFamily="@font/quicksand_regular"
+        android:gravity="top"
+        android:textSize="@dimen/_7sdp"
+        android:hint="Ask something"
+        android:padding="@dimen/_5sdp" />
+
+    <View
+        android:layout_below="@+id/edtTopic"
+        android:background="@color/colorLightGray_1"
+        android:id="@+id/viewBorder"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"></View>
+
+    <RelativeLayout
+        android:id="@+id/relativeTo"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/viewBorder"
+        android:layout_margin="1dp"
+        android:paddingRight="@dimen/_10sdp"
+        android:background="@drawable/card_look_1"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:fontFamily="@font/quicksand_medium"
+            android:text="Select Viewers"
+            android:textAllCaps="true"
+            android:textSize="@dimen/_7sdp" />
+
+        <Spinner
+            android:id="@+id/spinnerViewers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@color/colorTrans"></Spinner>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeSend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeTo"
+        android:background="@drawable/card_footer_light_blue">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/quicksand_bold"
+            android:padding="@dimen/_10sdp"
+            android:text="SEND"
+            android:textSize="@dimen/_7sdp"
+            android:textColor="@color/colorCommonBlueDark"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+</RelativeLayout>

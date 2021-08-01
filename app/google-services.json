@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "55587363996",
+    "firebase_url": "https://classteacher-ada9f.firebaseio.com",
+    "project_id": "classteacher-ada9f",
+    "storage_bucket": "classteacher-ada9f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:55587363996:android:50523effbc0ea1a2c56159",
+        "android_client_info": {
+          "package_name": "bbr.classteacher.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "55587363996-11veqpdgtunt0dpvohp1pjmfcfqtdu8m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCSm74mK0to5BoNjYM2MeQMy5Y0toVykYU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "55587363996-11veqpdgtunt0dpvohp1pjmfcfqtdu8m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

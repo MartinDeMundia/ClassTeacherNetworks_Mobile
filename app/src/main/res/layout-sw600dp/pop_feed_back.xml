@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/card_look"
+    android:orientation="vertical"
+    android:padding="@dimen/_10sdp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/edtFeedback"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Type Feedback here..."
+            android:padding="@dimen/_5sdp"
+            android:fontFamily="@font/quicksand_regular"
+            android:textSize="@dimen/_7sdp" />
+
+        <TextView
+            android:id="@+id/txtFeedbackReport"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_8sdp"
+            android:fontFamily="@font/quicksand_light"
+            android:padding="@dimen/_5sdp"
+            android:text="We will respond via email to feedback and questions. You may also send feedback to feedback@classteacher.com" />
+
+        <ImageView
+            android:id="@+id/imgSend"
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_gravity="right"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:padding="@dimen/_5sdp"
+            android:src="@drawable/ic_send" />
+    </LinearLayout>
+
+</RelativeLayout>

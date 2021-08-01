@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:easytabs="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAppBackgroundBlue"
+    tools:context="com.shamlatech.activity.parent.ParentStudentActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.loicteillard.easytabs.EasyTabs
+                android:id="@+id/easytabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                easytabs:etab_bold_for_selected="true"
+                easytabs:etab_separators="false">
+
+                <com.loicteillard.easytabs.EasyTabLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    easytabs:etab_selected_color="@color/colorTabLavender"
+                    easytabs:etab_unselected_color="@color/colorTabLavenderInactive">
+
+                    <ImageView
+                        android:layout_width="@dimen/_28sdp"
+                        android:layout_height="@dimen/_28sdp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_tab_menu_teacher" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/quicksand_medium"
+                        android:text="TEACHERS"
+                        android:textSize="@dimen/_7sdp" />
+                </com.loicteillard.easytabs.EasyTabLayout>
+
+                <com.loicteillard.easytabs.EasyTabLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    easytabs:etab_selected_color="@color/colorTabGreen"
+                    easytabs:etab_unselected_color="@color/colorTabGreenInactive">
+
+                    <ImageView
+                        android:layout_width="@dimen/_28sdp"
+                        android:layout_height="@dimen/_28sdp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_tab_menu_education" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/quicksand_medium"
+                        android:text="EDUCATION"
+                        android:textSize="@dimen/_7sdp" />
+                </com.loicteillard.easytabs.EasyTabLayout>
+
+                <com.loicteillard.easytabs.EasyTabLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    easytabs:etab_selected_color="@color/colorTabBlue"
+                    easytabs:etab_unselected_color="@color/colorTabBlueInactive">
+
+                    <ImageView
+                        android:layout_width="@dimen/_28sdp"
+                        android:layout_height="@dimen/_28sdp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_tab_menu_behaviour" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/quicksand_medium"
+                        android:text="BEHAVIOUR"
+                        android:textSize="@dimen/_7sdp" />
+                </com.loicteillard.easytabs.EasyTabLayout>
+
+                <com.loicteillard.easytabs.EasyTabLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    easytabs:etab_selected_color="@color/colorTabRed"
+                    easytabs:etab_unselected_color="@color/colorTabRedInactive">
+
+                    <ImageView
+                        android:layout_width="@dimen/_28sdp"
+                        android:layout_height="@dimen/_28sdp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_tab_menu_health" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/quicksand_medium"
+                        android:text="HEALTH"
+                        android:textSize="@dimen/_7sdp" />
+                </com.loicteillard.easytabs.EasyTabLayout>
+
+                <com.loicteillard.easytabs.EasyTabLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    easytabs:etab_selected_color="@color/colorTabOrange"
+                    easytabs:etab_unselected_color="@color/colorTabOrangeInactive">
+
+                    <ImageView
+                        android:layout_width="@dimen/_28sdp"
+                        android:layout_height="@dimen/_28sdp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_tab_menu_attendance" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/quicksand_medium"
+                        android:text="ATTENDANCE"
+                        android:textSize="@dimen/_7sdp" />
+                </com.loicteillard.easytabs.EasyTabLayout>
+
+
+                <com.loicteillard.easytabs.EasyTabLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    easytabs:etab_selected_color="@color/colorTabOrange"
+                    easytabs:etab_unselected_color="@color/colorTabOrangeInactive">
+
+                    <ImageView
+                        android:layout_width="@dimen/_28sdp"
+                        android:layout_height="@dimen/_28sdp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_tab_menu_journal" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/quicksand_medium"
+                        android:text="JOURNAL"
+                        android:textSize="@dimen/_7sdp" />
+                </com.loicteillard.easytabs.EasyTabLayout>
+
+            </com.loicteillard.easytabs.EasyTabs>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:background="@color/colorGray" />
+
+            <RelativeLayout
+                android:id="@+id/relativeAcademicYear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_10sdp">
+
+                <TextView
+                    android:id="@+id/txtChooseAcademic"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_toLeftOf="@+id/rlSpinner"
+                    android:fontFamily="@font/quicksand_medium"
+                    android:text="Choose the Academic Year"
+                    android:textColor="@color/colorBlack" />
+
+                <Spinner
+                    android:id="@+id/spinnerYear"
+                    android:paddingLeft="@dimen/_5sdp"
+                    android:visibility="gone"
+                    android:paddingTop="@dimen/_5sdp"
+                    android:paddingBottom="@dimen/_5sdp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_toLeftOf="@+id/rlSpinner"
+                    android:background="@drawable/card_look" />
+
+                <RelativeLayout
+                    android:id="@+id/rlSpinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true">
+
+                    <Spinner
+                        android:id="@+id/spinnerTerm"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/_5sdp"
+                        android:paddingTop="@dimen/_5sdp"
+                        android:paddingBottom="@dimen/_5sdp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:background="@drawable/card_look"
+                        android:visibility="gone" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewPager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>
+

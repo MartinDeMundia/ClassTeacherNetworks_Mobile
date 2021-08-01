@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">Class Teacher</string>
+    <string name="title_activity_intro">ActivityIntro</string>
+    <string name="Verify_Step_1">We have sent a one time log in pin to your phone via SMS, please enter the pin below</string>
+    <string name="Verify_Step_2">We are now checking our school databases to confirm your details and set up the application.</string>
+    <string name="Verify_Step_3">Your details have been successfully verified.You will now be logged into this app</string>
+    <string name="Verify_Step_4">Sorry, We could not fetch your details</string>
+
+
+    <string name="Role_Selection">Are you a parent or a\nteacher? </string>
+    <string name="title_activity_home">HomeActivity</string>
+
+    <string name="title_activity_complete">complete</string>
+    <string name="title_activity_mpesaexpress">MPESAExpressActivity</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="information_disclaimer">*All your data is secured.We do not share it with anyone</string>
+    <string name="facebook_app_id">2724264477699276</string>
+
+    <string-array name="title_array">
+        <item>Mr.</item>
+        <item>Miss.</item>
+        <item>Mrs.</item>
+        <item>Dr.</item>
+    </string-array>
+    <string name="title_activity_resource">ResourceActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+</resources>

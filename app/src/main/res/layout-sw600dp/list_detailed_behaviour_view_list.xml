@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        style="@style/relative_CardLook"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_5sdp"
+            android:background="@drawable/card_header_blue"></View>
+
+        <TextView
+            android:id="@+id/txtBehaviourTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:fontFamily="@font/quicksand_medium"
+            android:padding="@dimen/_8sdp"
+            android:text="School Performance Analysis "
+            android:textAllCaps="true"
+            android:textColor="@color/colorCommonBlueDark"
+            android:textSize="@dimen/_8sdp"
+            android:textStyle="bold" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerBehaviourContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:nestedScrollingEnabled="false"
+            android:paddingBottom="@dimen/_10sdp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

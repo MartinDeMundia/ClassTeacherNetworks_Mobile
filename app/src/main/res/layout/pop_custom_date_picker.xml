@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relativeDataPicker"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/relativeCalenderHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/card_header_levander"
+        android:padding="@dimen/_10sdp">
+
+        <TextView
+            android:id="@+id/txtCalendarName"
+            android:layout_width="wrap_content"
+            android:fontFamily="@font/quicksand_medium"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="SUBJECT TEACHERS"
+            android:textAllCaps="true"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/_11sdp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.prolificinteractive.materialcalendarview.MaterialCalendarView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/calendarDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/imgCalendarDateRight"
+            android:layout_toRightOf="@+id/imgCalendarDateLeft"
+            app:mcv_arrowColor="@color/colorWhite"
+            app:mcv_selectionColor="@color/colorLightBlack"
+            app:mcv_showOtherDates="defaults" />
+
+        <ImageView
+            android:id="@+id/imgCalendarDateLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:padding="@dimen/_5sdp"
+            android:src="@drawable/ic_arrow_left"
+            android:tint="@color/colorLightBlack_1" />
+
+        <ImageView
+            android:id="@+id/imgCalendarDateRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:padding="@dimen/_5sdp"
+            android:src="@drawable/ic_arrow_right"
+            android:tint="@color/colorLightBlack_1" />
+    </RelativeLayout>
+</LinearLayout>

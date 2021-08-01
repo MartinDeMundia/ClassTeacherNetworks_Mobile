@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?android:attr/selectableItemBackground"
+    android:paddingBottom="@dimen/_1sdp"
+    android:paddingTop="@dimen/_1sdp">
+
+    <RelativeLayout
+        android:id="@+id/relativeLeft"
+        android:layout_width="@dimen/_10sdp"
+        android:layout_height="wrap_content"></RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linearPosition"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/relativeRight"
+        android:layout_toRightOf="@+id/relativeLeft"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtStudentName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:ellipsize="end"
+                android:fontFamily="@font/quicksand_regular"
+                android:gravity="center_horizontal"
+                android:maxLines="1"
+                android:text="CLASS TEACHER"
+                android:textSize="@dimen/_8sdp" />
+
+
+            <RelativeLayout
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_gravity="center">
+
+                <ImageView
+                    android:id="@+id/imgClassPosition"
+                    android:layout_width="@dimen/_15sdp"
+                    android:layout_height="@dimen/_15sdp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/class_layout_update_placed"
+                    android:padding="@dimen/_3sdp"
+                    android:src="@drawable/ic_add_16"
+                    android:tint="@color/colorPrimary" />
+
+
+                <com.wang.avi.AVLoadingIndicatorView
+                    android:id="@+id/aviSelected"
+                    style="@style/AVLoadingIndicatorView"
+                    android:layout_width="@dimen/_35sdp"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_centerInParent="true"
+                    app:indicatorColor="@color/colorPrimaryDark"
+                    app:indicatorName="BallScaleMultipleIndicator" />
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeRight"
+        android:layout_width="@dimen/_10sdp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"></RelativeLayout>
+
+</RelativeLayout>

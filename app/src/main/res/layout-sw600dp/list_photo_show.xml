@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.shamlatech.utils.SquareRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relativePhotos"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:padding="@dimen/_1sdp">
+
+    <ImageView
+        android:id="@+id/imgPhotos"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:transitionName="image" />
+
+</com.shamlatech.utils.SquareRelativeLayout>
